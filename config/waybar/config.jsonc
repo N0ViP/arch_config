@@ -20,8 +20,7 @@
     "modules-right": [
         "network",
         "pulseaudio",
-        "battery",
-        "custom/power"
+        "battery"
     ],
 
     "custom/launcher": {
@@ -39,7 +38,6 @@
         "window-rewrite": {
             "class<google-chrome>": "",
             "class<kitty>": "",
-            "class<rofi>": "",
             "class<discord>": "",
             "initialClass<discord>": "",
             "title<.*Discord.*>": "",
@@ -97,11 +95,5 @@
         "format-charging": "󰂄  {capacity}%",
         "format-plugged": "󰚥  {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
-
-    "custom/power": {
-        "format": "",
-        "on-click": "/home/n0vip/.config/rofi/powermenu.sh",
-        "tooltip": false
     }
 }

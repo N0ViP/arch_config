@@ -29,7 +29,6 @@ packages=(
     "wl-clipboard"
     "brightnessctl"
     "playerctl"
-    "dunst"
     "btop"
     "sddm"
 )

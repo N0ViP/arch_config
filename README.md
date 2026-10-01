@@ -11,7 +11,7 @@ This repository contains my personal configurations for Arch Linux (Hyprland), i
 - **File Manager:** Thunar
 - **Media:** MPV (Video Player), IMV (Image Viewer)
 - **Apps:** Spotify, Discord (Configs excluded for cleanliness)
-- **System Monitors & Notifications:** Btop, Dunst, SwayNC
+- **System Monitors & Notifications:** Btop, SwayNC
 - **Login Manager Theme:** SDDM (Cyberpunk Theme)
 
 ## Installation
