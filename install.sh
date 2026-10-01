@@ -31,6 +31,7 @@ packages=(
     "playerctl"
     "btop"
     "sddm"
+    "ttf-jetbrains-mono-nerd"
 )
 
 # We use spotify-launcher as 'spotify' is sometimes not directly in AUR/repos, or 'spotify' itself from AUR
