@@ -1,0 +1,142 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans Arabic", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* Tooltip styling */
+tooltip {
+    background: #090a0f;
+    border: 2px solid #00ffcc;
+    border-radius: 0px;
+    animation: cyberShift 4s infinite linear;
+}
+tooltip label {
+    color: #00ffcc;
+    animation: cyberShiftText 4s infinite linear;
+}
+
+#workspaces button {
+    padding: 0 12px;
+    background-color: #090a0f;
+    border: 2px solid #00ffcc;
+    margin: 0 4px;
+    transition: all 0.2s ease;
+    animation: cyberShift 4s infinite linear;
+    animation-delay: -0.5s;
+}
+
+#workspaces button:hover {
+    background-color: #ffffff;
+    color: #090a0f;
+    text-shadow: none;
+}
+
+#workspaces button.active {
+    background-color: #ff00aa;
+    color: #ffffff;
+    border-color: #ff00aa;
+    box-shadow: 2px 2px 4px #00ffcc;
+    animation: none;
+}
+
+#custom-launcher,
+#cpu,
+#memory,
+#clock,
+#network,
+#pulseaudio,
+#battery,
+#custom-power {
+    background-color: #090a0f;
+    padding: 0 12px;
+    margin: 0 4px;
+    border: 2px solid #fcee0a;
+    animation: cyberShift 4s infinite linear;
+}
+
+/* Negative delays force the phase offset immediately */
+#custom-launcher { animation-delay: -0.0s; font-size: 18px; padding-right: 18px; padding-left: 14px; }
+#cpu { animation-delay: -1.0s; }
+#memory { animation-delay: -1.5s; }
+#clock { animation-delay: -2.0s; }
+#network { animation-delay: -2.5s; }
+#pulseaudio { animation-delay: -3.0s; }
+#battery { animation-delay: -3.5s; }
+#custom-power { animation-delay: -4.0s; }
+
+#battery.warning {
+    color: #090a0f;
+    background-color: #fcee0a;
+    border-color: #fcee0a;
+    text-shadow: none;
+    animation: none;
+}
+
+#battery.critical {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes cyberShift {
+    0% {
+        border-color: #00ffcc;
+        box-shadow: 2px 2px 5px #aa0055;
+        color: #00ffcc;
+        text-shadow: 0 0 2px #00ffcc;
+    }
+    33% {
+        border-color: #ff00aa;
+        box-shadow: 2px 2px 5px #bb9900;
+        color: #ff00aa;
+        text-shadow: 0 0 2px #ff00aa;
+    }
+    66% {
+        border-color: #fcee0a;
+        box-shadow: 2px 2px 5px #00ffcc;
+        color: #fcee0a;
+        text-shadow: 0 0 2px #fcee0a;
+    }
+    100% {
+        border-color: #00ffcc;
+        box-shadow: 2px 2px 5px #aa0055;
+        color: #00ffcc;
+        text-shadow: 0 0 2px #00ffcc;
+    }
+}
+
+@keyframes cyberShiftText {
+    0% {
+        color: #00ffcc;
+        text-shadow: 0 0 2px #00ffcc;
+    }
+    33% {
+        color: #ff00aa;
+        text-shadow: 0 0 2px #ff00aa;
+    }
+    66% {
+        color: #fcee0a;
+        text-shadow: 0 0 2px #fcee0a;
+    }
+    100% {
+        color: #00ffcc;
+        text-shadow: 0 0 2px #00ffcc;
+    }
+}
+
+@keyframes blink {
+    to {
+        background-color: #ff0000;
+        color: #090a0f;
+    }
+}

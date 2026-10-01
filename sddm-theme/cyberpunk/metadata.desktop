@@ -1,0 +1,7 @@
+[SddmGreeterTheme]
+Name=Cyberpunk
+Description=Cyberpunk SDDM theme matching n0vip's Hyprland setup
+Author=n0vip
+Version=1.0
+License=GPLv3
+Type=sddm-theme

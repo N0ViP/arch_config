@@ -1,0 +1,75 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans Arabic", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#window {
+    background-color: rgba(9, 10, 15, 0.65);
+    border: 2px solid #00ffcc;
+    animation: cyberShift 4s infinite linear;
+    animation-delay: -0.5s;
+    box-shadow: 2px 2px 5px #aa0055;
+}
+
+#input {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(9, 10, 15, 0.65);
+    color: #fcee0a;
+    border: 2px solid #fcee0a;
+    animation: cyberShift 4s infinite linear;
+    animation-delay: -1.0s;
+}
+
+#inner-box {
+    margin: 5px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 10px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: 2px solid #ff00aa;
+    animation: cyberShift 4s infinite linear;
+    animation-delay: -1.5s;
+}
+
+#text {
+    margin: 5px;
+    color: #00ffcc;
+    animation: cyberShiftText 4s infinite linear;
+}
+
+#entry {
+    padding: 5px;
+}
+
+#entry:selected {
+    background-color: #ff00aa;
+    border: 2px solid #fcee0a;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+    animation: none;
+    text-shadow: none;
+}
+
+@keyframes cyberShift {
+    0% { border-color: #00ffcc; box-shadow: 2px 2px 5px #aa0055; }
+    33% { border-color: #ff00aa; box-shadow: 2px 2px 5px #bb9900; }
+    66% { border-color: #fcee0a; box-shadow: 2px 2px 5px #00ffcc; }
+    100% { border-color: #00ffcc; box-shadow: 2px 2px 5px #aa0055; }
+}
+
+@keyframes cyberShiftText {
+    0% { color: #00ffcc; text-shadow: 0 0 2px #00ffcc; }
+    33% { color: #ff00aa; text-shadow: 0 0 2px #ff00aa; }
+    66% { color: #fcee0a; text-shadow: 0 0 2px #fcee0a; }
+    100% { color: #00ffcc; text-shadow: 0 0 2px #00ffcc; }
+}

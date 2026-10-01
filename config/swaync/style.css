@@ -1,0 +1,148 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans Arabic", sans-serif;
+    font-weight: 900;
+}
+
+window,
+.blank-window,
+.floating-notifications,
+.control-center-window,
+.notification-window {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: transparent;
+}
+
+.notification-row {
+    outline: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.notification {
+    background-color: rgba(9, 10, 15, 0.65);
+    padding: 16px;
+    margin: 0px;
+    border: 2px solid #00ffcc;
+    border-radius: 0px;
+    box-shadow: 2px 2px 5px #aa0055;
+    animation: cyberShift 4s infinite linear;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.close-button {
+    background: transparent;
+    color: #ff0055;
+    text-shadow: 0 0 5px #ff0055;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.close-button:hover {
+    background: #ff00aa;
+    color: #ffffff;
+}
+
+.notification-default-action,
+.notification-action {
+    padding: 4px;
+    margin: 0;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    color: #e0e0e0;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    -gtk-icon-effect: none;
+    background: transparent;
+}
+
+.summary {
+    font-size: 16px;
+    color: #00ffcc;
+    animation: cyberShiftText 4s infinite linear;
+    padding-bottom: 6px;
+}
+
+.body {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Control center styling */
+.control-center {
+    background-color: rgba(9, 10, 15, 0.75);
+    border: 2px solid #ff00aa;
+    border-radius: 0px;
+}
+
+.widget-title {
+    color: #fcee0a;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 5px #fcee0a;
+}
+
+.widget-title > button {
+    font-size: 14px;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ff00aa;
+    border-radius: 0;
+}
+
+.widget-title > button:hover {
+    background: #ff00aa;
+}
+
+.widget-dnd {
+    background: transparent;
+    padding: 10px;
+}
+
+.widget-dnd > switch {
+    background: #090a0f;
+    border: 2px solid #00ffcc;
+    border-radius: 0;
+}
+
+.widget-dnd > switch:checked {
+    background: #ff00aa;
+    border-color: #ff00aa;
+}
+
+.widget-dnd > switch slider {
+    background: #00ffcc;
+    border-radius: 0;
+}
+
+@keyframes cyberShift {
+    0% { border-color: #00ffcc; box-shadow: 2px 2px 5px #aa0055; }
+    33% { border-color: #ff00aa; box-shadow: 2px 2px 5px #bb9900; }
+    66% { border-color: #fcee0a; box-shadow: 2px 2px 5px #00ffcc; }
+    100% { border-color: #00ffcc; box-shadow: 2px 2px 5px #aa0055; }
+}
+
+@keyframes cyberShiftText {
+    0% { color: #00ffcc; text-shadow: 0 0 2px #00ffcc; }
+    33% { color: #ff00aa; text-shadow: 0 0 2px #ff00aa; }
+    66% { color: #fcee0a; text-shadow: 0 0 2px #fcee0a; }
+    100% { color: #00ffcc; text-shadow: 0 0 2px #00ffcc; }
+}
