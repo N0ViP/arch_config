@@ -8,6 +8,7 @@ This repository contains my personal configurations for Arch Linux (Hyprland), i
 - **App Launcher:** Wofi
 - **Bar:** Waybar
 - **Terminal:** Kitty
+- **Shell:** Bash (with custom Neon Cyberpunk prompt)
 - **File Manager:** Thunar
 - **Media:** MPV (Video Player), IMV (Image Viewer)
 - **Apps:** Spotify, Discord (Configs excluded for cleanliness)
@@ -46,6 +47,7 @@ An automated installation script is provided to install all necessary packages (
 If you prefer to copy things manually:
 
 - Copy contents of `config/` to your `~/.config/` directory.
+- Copy `bashrc` to `~/.bashrc`.
 - Copy `sddm-theme/cyberpunk/` to `/usr/share/sddm/themes/cyberpunk`.
 - Update your `/etc/sddm.conf` to include:
   ```ini

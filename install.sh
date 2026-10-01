@@ -55,6 +55,9 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Copy config folders
 cp -r "$DOTFILES_DIR/config/"* ~/.config/
 
+# Copy bashrc
+cp "$DOTFILES_DIR/bashrc" ~/.bashrc
+
 echo "Setting up SDDM Theme (cyberpunk)..."
 # Needs sudo to copy to /usr/share/sddm/themes and write to /etc/sddm.conf
 if [ -d "$DOTFILES_DIR/sddm-theme/cyberpunk" ]; then
