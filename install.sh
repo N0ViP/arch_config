@@ -14,15 +14,22 @@ fi
 
 packages=(
     "waybar"
-    "rofi"
+    "wofi"
     "discord"
     "mpv"
     "imv"
     "kitty"
+    "thunar"
     "hyprland"
-    "wofi"
-    "dunst"
     "swaync"
+    "swaybg"
+    "swaylock"
+    "grim"
+    "slurp"
+    "wl-clipboard"
+    "brightnessctl"
+    "playerctl"
+    "dunst"
     "btop"
     "sddm"
 )
@@ -65,4 +72,4 @@ else
 fi
 
 echo "Installation complete!"
-echo "Note: Discord configurations like 'settings.json' were copied, but you will still need to log into Discord and Spotify."
+echo "Note: You will still need to log into Discord and Spotify as those configs were excluded to keep the repo clean."

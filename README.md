@@ -5,11 +5,12 @@ This repository contains my personal configurations for Arch Linux (Hyprland), i
 ## What's Included
 
 - **Window Manager:** Hyprland
-- **App Launcher:** Rofi / Wofi
+- **App Launcher:** Wofi
 - **Bar:** Waybar
 - **Terminal:** Kitty
+- **File Manager:** Thunar
 - **Media:** MPV (Video Player), IMV (Image Viewer)
-- **Apps:** Spotify, Discord
+- **Apps:** Spotify, Discord (Configs excluded for cleanliness)
 - **System Monitors & Notifications:** Btop, Dunst, SwayNC
 - **Login Manager Theme:** SDDM (Cyberpunk Theme)
 

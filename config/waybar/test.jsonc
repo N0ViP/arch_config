@@ -1,7 +1,0 @@
-{
-    "modules-left": ["hyprland/workspaces"],
-    "hyprland/workspaces": {
-        "format": "{name}",
-        "tooltip": true
-    }
-}
