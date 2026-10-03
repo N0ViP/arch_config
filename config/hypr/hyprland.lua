@@ -15,7 +15,7 @@ hl.monitor({
 
 local terminal    = "kitty"
 local fileManager = "thunar"
-local menu        = "pkill wofi || wofi --show drun --term /home/n0vip/.local/bin/wofi-term"
+local menu        = "pkill wofi || wofi --show drun"
 
 -------------------
 ---- AUTOSTART ----

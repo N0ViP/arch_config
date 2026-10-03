@@ -40,6 +40,7 @@ packages=(
     "spotify"
     "google-chrome"
     "visual-studio-code-bin"
+    "bash-completion"
 )
 
 for pkg in "${packages[@]}"; do

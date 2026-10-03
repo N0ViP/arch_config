@@ -6,4 +6,4 @@ allow_markup=true
 no_actions=true
 hide_scroll=true
 insensitive=true
-term=/home/n0vip/.local/bin/wofi-term
+term=kitty sh -c
