@@ -215,7 +215,6 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("swaylock"))
 hl.env("TERMINAL", "kitty")
 
 hl.on("hyprland.start", function ()
-    hl.exec_cmd("hyprctl keyword windowrulev2 'opacity 0.65 0.65,class:^(thunar)$'")
 end)
 
 hl.window_rule({ match = { class = "^(mpv)$" }, float = true, center = true })

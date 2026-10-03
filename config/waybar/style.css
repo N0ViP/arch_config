@@ -35,8 +35,12 @@ tooltip label {
 
 #workspaces button:hover {
     background-color: #ffffff;
-    color: #090a0f;
-    text-shadow: none;
+}
+
+#workspaces button:hover label,
+#workspaces button:hover * {
+    animation: cyberShiftText 4s infinite linear;
+    transition: none;
 }
 
 #workspaces button.active {
@@ -53,8 +57,7 @@ tooltip label {
 #clock,
 #network,
 #pulseaudio,
-#battery,
-#custom-power {
+#battery {
     background-color: #090a0f;
     padding: 0 12px;
     margin: 0 4px;
@@ -70,7 +73,6 @@ tooltip label {
 #network { animation-delay: -2.5s; }
 #pulseaudio { animation-delay: -3.0s; }
 #battery { animation-delay: -3.5s; }
-#custom-power { animation-delay: -4.0s; }
 
 #battery.warning {
     color: #090a0f;
