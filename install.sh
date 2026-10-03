@@ -37,11 +37,10 @@ packages=(
     "qt5-svg"
     "nwg-look"
     "candy-icons-git"
+    "spotify"
+    "google-chrome"
+    "visual-studio-code-bin"
 )
-
-# We use spotify-launcher as 'spotify' is sometimes not directly in AUR/repos, or 'spotify' itself from AUR
-# Let's try to install 'spotify' from AUR
-packages+=("spotify")
 
 for pkg in "${packages[@]}"; do
     if ! pacman -Qs "$pkg" > /dev/null; then
