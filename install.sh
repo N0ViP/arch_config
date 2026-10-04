@@ -41,6 +41,7 @@ packages=(
     "google-chrome"
     "visual-studio-code-bin"
     "bash-completion"
+    "neovim"
 )
 
 for pkg in "${packages[@]}"; do

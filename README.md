@@ -13,6 +13,7 @@ This repository contains my personal configurations for Arch Linux (Hyprland), i
 - **Media:** MPV (Video Player), IMV (Image Viewer)
 - **Apps:** Spotify, Discord (Configs excluded for cleanliness)
 - **System Monitors & Notifications:** Btop, SwayNC
+- **Editor:** Neovim (Cyberpunk transparent theme, Lualine, auto-indent, tabstop=4)
 - **Login Manager Theme:** SDDM (Cyberpunk Theme)
 
 ## Installation
