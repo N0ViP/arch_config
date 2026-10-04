@@ -44,7 +44,7 @@ packages=(
 )
 
 for pkg in "${packages[@]}"; do
-    if ! pacman -Qs "$pkg" > /dev/null; then
+    if ! pacman -Qi "$pkg" &> /dev/null; then
         echo "Installing $pkg..."
         yay -S --noconfirm "$pkg"
     else
