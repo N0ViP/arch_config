@@ -107,12 +107,14 @@ for app in "${clutter_apps[@]}"; do
     fi
 done
 
-echo "Fixing btop for Wofi..."
-if [ -f "/usr/share/applications/btop.desktop" ]; then
-    cp "/usr/share/applications/btop.desktop" "$HOME/.local/share/applications/"
-    sed -i 's/^Terminal=true/Terminal=false/' "$HOME/.local/share/applications/btop.desktop"
-    sed -i 's/^Exec=\(.*\)/Exec=kitty -- \1/' "$HOME/.local/share/applications/btop.desktop"
-fi
+echo "Fixing terminal apps (btop, htop) for Wofi..."
+for app in "btop" "htop"; do
+    if [ -f "/usr/share/applications/$app.desktop" ]; then
+        cp "/usr/share/applications/$app.desktop" "$HOME/.local/share/applications/"
+        sed -i 's/^Terminal=true/Terminal=false/' "$HOME/.local/share/applications/$app.desktop"
+        sed -i 's/^Exec=\(.*\)/Exec=kitty -- \1/' "$HOME/.local/share/applications/$app.desktop"
+    fi
+done
 
 echo "Installation complete!"
 echo "Note: You will still need to log into Discord and Spotify as those configs were excluded to keep the repo clean."
